@@ -1,0 +1,110 @@
+:root{
+    --color-primary: #e8505b;
+    --color-secundary: #455a64;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gris: #eceeef;
+
+    --funtePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Roboto', sans-serif;
+    
+    --separacion: 5rem;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.6rem;
+    background-color: var(--color-white);
+}
+
+p{
+    color: var(--color-black);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media (min-width: 768px){
+    p{
+        font-size: 18px;
+    }
+}
+
+.contenedor{
+    width: 75%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3{
+    margin: 0 0 auto 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+ font-size: 2rem;
+}
+@media (min-width: 768px) {
+    h2{
+        font-size: 40px;
+    }
+}
+
+h3{
+    font-size: 1.5rem;
+}
+@media (min-width: 768px){
+    h3{
+        font-size: 30px;
+    }
+}
+
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*utilidad*/
+
+.text-center{
+    text-align: center;
+}
+
+.bg-Primario{
+    background-color: var(--color-primary);
+}
+
+.header{
+    color: var(--color-black);
+}
+
+.navegacion{
+    color: var(--color-black);
+}
+
+.btn{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    color: var(--color-white);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
